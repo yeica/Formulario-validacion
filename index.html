@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+    <!--Framework Skeleton.css-->
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Estilos generales-->
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="six column">
+                    <h1>Formulario</h1>
+                    <p>Complete este formulario para validar la información suministrada.</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form id="formulario">
+                <div class="row">
+                    <div class="offset-by-three three columns">
+                        <label for="nombre">Nombre</label>
+                        <input class="u-full-width" type="text" placeholder="Yeyskalyn" id="nombre" name="nombre"
+                            required autocomplete="off">
+                    </div>
+                    <div class="three columns">
+                        <label for="apellido">Apellido</label>
+                        <input class="u-full-width" type="text" placeholder="Cordero" id="apellido" name="apellido"
+                            required autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-by-three six columns">
+                        <label for="cedula">Cédula</label>
+                        <input class="u-full-width" type="text" placeholder="028-0053693-7" id="cedula" name="cedula"
+                            required minlength="13" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-by-three six columns">
+                        <label for="correo">Correo</label>
+                        <input class="u-full-width" type="email" placeholder="ejemplo@mailbox.com" id="email"
+                            name="email" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-by-five two columns">
+                        <button class="button button-primary u-full-width" type="button" id="btn">Validar</button>
+                    </div>
+                </div>
+                <div class="row" id="msg-row">
+                    <span id="msg"></span>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="offset-by-three six columns">
+                    <p>Yeyskalyn Altagracia Cordero Herrera</p>
+                    <p>2018-6939</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--CDN jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--CDN plugin jquery validate-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <!--jequery mask-->
+    <script src="js/jquery.mask.js"></script>
+    <!--scrips generales-->
+    <script src="js/scrips.js"></script>
+</body>
+
+</html>
